@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var b1s1: UIImageView!
     
     @IBAction func b1s1button(sender: AnyObject) {
-      //  b1s1.image = UIImageView(named: "starclicked.png")
+     b1s1.image = UIImage(named: ("starclicked.png"))
     }
     
   
