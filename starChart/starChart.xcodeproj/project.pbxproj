@@ -13,6 +13,12 @@
 		3E91A0D71AE2355600F98BD4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E91A0D61AE2355600F98BD4 /* Images.xcassets */; };
 		3E91A0DA1AE2355600F98BD4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E91A0D81AE2355600F98BD4 /* LaunchScreen.xib */; };
 		3E91A0E61AE2355600F98BD4 /* starChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E91A0E51AE2355600F98BD4 /* starChartTests.swift */; };
+		91A504431AE31E1D00F839F9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A504421AE31E1D00F839F9 /* libsqlite3.dylib */; };
+		91A504501AE31F5600F839F9 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A504471AE31F5600F839F9 /* FMDatabase.m */; };
+		91A504511AE31F5600F839F9 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A504491AE31F5600F839F9 /* FMResultSet.m */; };
+		91A504521AE31F5600F839F9 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A5044B1AE31F5600F839F9 /* FMDatabaseQueue.m */; };
+		91A504531AE31F5600F839F9 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A5044D1AE31F5600F839F9 /* FMDatabaseAdditions.m */; };
+		91A504541AE31F5600F839F9 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A5044F1AE31F5600F839F9 /* FMDatabasePool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,19 @@
 		3E91A0DF1AE2355600F98BD4 /* starChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = starChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E91A0E41AE2355600F98BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E91A0E51AE2355600F98BD4 /* starChartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starChartTests.swift; sourceTree = "<group>"; };
+		91A504421AE31E1D00F839F9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		91A504441AE31F5600F839F9 /* starChart-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "starChart-Bridging-Header.h"; sourceTree = "<group>"; };
+		91A504451AE31F5600F839F9 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = fmdb/src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		91A504461AE31F5600F839F9 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = fmdb/src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		91A504471AE31F5600F839F9 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = fmdb/src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		91A504481AE31F5600F839F9 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = fmdb/src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		91A504491AE31F5600F839F9 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = fmdb/src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		91A5044A1AE31F5600F839F9 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = fmdb/src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		91A5044B1AE31F5600F839F9 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = fmdb/src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		91A5044C1AE31F5600F839F9 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = fmdb/src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		91A5044D1AE31F5600F839F9 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = fmdb/src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		91A5044E1AE31F5600F839F9 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = fmdb/src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		91A5044F1AE31F5600F839F9 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = fmdb/src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A504431AE31E1D00F839F9 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +79,7 @@
 		3E91A0C11AE2355600F98BD4 = {
 			isa = PBXGroup;
 			children = (
+				91A504421AE31E1D00F839F9 /* libsqlite3.dylib */,
 				3E91A0CC1AE2355600F98BD4 /* starChart */,
 				3E91A0E21AE2355600F98BD4 /* starChartTests */,
 				3E91A0CB1AE2355600F98BD4 /* Products */,
@@ -82,7 +103,19 @@
 				3E91A0D31AE2355600F98BD4 /* Main.storyboard */,
 				3E91A0D61AE2355600F98BD4 /* Images.xcassets */,
 				3E91A0D81AE2355600F98BD4 /* LaunchScreen.xib */,
+				91A504451AE31F5600F839F9 /* FMDB.h */,
+				91A504461AE31F5600F839F9 /* FMDatabase.h */,
+				91A504471AE31F5600F839F9 /* FMDatabase.m */,
+				91A504481AE31F5600F839F9 /* FMResultSet.h */,
+				91A504491AE31F5600F839F9 /* FMResultSet.m */,
+				91A5044A1AE31F5600F839F9 /* FMDatabaseQueue.h */,
+				91A5044B1AE31F5600F839F9 /* FMDatabaseQueue.m */,
+				91A5044C1AE31F5600F839F9 /* FMDatabaseAdditions.h */,
+				91A5044D1AE31F5600F839F9 /* FMDatabaseAdditions.m */,
+				91A5044E1AE31F5600F839F9 /* FMDatabasePool.h */,
+				91A5044F1AE31F5600F839F9 /* FMDatabasePool.m */,
 				3E91A0CD1AE2355600F98BD4 /* Supporting Files */,
+				91A504441AE31F5600F839F9 /* starChart-Bridging-Header.h */,
 			);
 			path = starChart;
 			sourceTree = "<group>";
@@ -212,8 +245,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A504521AE31F5600F839F9 /* FMDatabaseQueue.m in Sources */,
+				91A504501AE31F5600F839F9 /* FMDatabase.m in Sources */,
 				3E91A0D21AE2355600F98BD4 /* ViewController.swift in Sources */,
+				91A504511AE31F5600F839F9 /* FMResultSet.m in Sources */,
+				91A504541AE31F5600F839F9 /* FMDatabasePool.m in Sources */,
 				3E91A0D01AE2355600F98BD4 /* AppDelegate.swift in Sources */,
+				91A504531AE31F5600F839F9 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,9 +380,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = starChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "starChart/starChart-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,9 +394,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = starChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "starChart/starChart-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -371,6 +416,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = starChartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/starChart.app/starChart";
@@ -386,6 +432,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = starChartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/starChart.app/starChart";
@@ -411,6 +458,7 @@
 				3E91A0EB1AE2355600F98BD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E91A0EC1AE2355600F98BD4 /* Build configuration list for PBXNativeTarget "starChartTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +467,7 @@
 				3E91A0EE1AE2355600F98BD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
