@@ -13,8 +13,6 @@
 		3E91A0D71AE2355600F98BD4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E91A0D61AE2355600F98BD4 /* Images.xcassets */; };
 		3E91A0DA1AE2355600F98BD4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E91A0D81AE2355600F98BD4 /* LaunchScreen.xib */; };
 		3E91A0E61AE2355600F98BD4 /* starChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E91A0E51AE2355600F98BD4 /* starChartTests.swift */; };
-		3E91A0F01AE3274100F98BD4 /* unclickedStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E91A0EF1AE3274100F98BD4 /* unclickedStar.png */; };
-		3E91A0F21AE3288D00F98BD4 /* starclicked.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E91A0F11AE3288D00F98BD4 /* starclicked.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +36,6 @@
 		3E91A0DF1AE2355600F98BD4 /* starChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = starChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E91A0E41AE2355600F98BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E91A0E51AE2355600F98BD4 /* starChartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starChartTests.swift; sourceTree = "<group>"; };
-		3E91A0EF1AE3274100F98BD4 /* unclickedStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unclickedStar.png; path = ../../../../Desktop/unclickedStar.png; sourceTree = "<group>"; };
-		3E91A0F11AE3288D00F98BD4 /* starclicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = starclicked.png; path = ../../../../Desktop/starclicked.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +62,6 @@
 				3E91A0CC1AE2355600F98BD4 /* starChart */,
 				3E91A0E21AE2355600F98BD4 /* starChartTests */,
 				3E91A0CB1AE2355600F98BD4 /* Products */,
-				3E91A0EF1AE3274100F98BD4 /* unclickedStar.png */,
-				3E91A0F11AE3288D00F98BD4 /* starclicked.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,8 +192,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E91A0F21AE3288D00F98BD4 /* starclicked.png in Resources */,
-				3E91A0F01AE3274100F98BD4 /* unclickedStar.png in Resources */,
 				3E91A0D51AE2355600F98BD4 /* Main.storyboard in Resources */,
 				3E91A0DA1AE2355600F98BD4 /* LaunchScreen.xib in Resources */,
 				3E91A0D71AE2355600F98BD4 /* Images.xcassets in Resources */,
@@ -419,7 +411,6 @@
 				3E91A0EB1AE2355600F98BD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		3E91A0EC1AE2355600F98BD4 /* Build configuration list for PBXNativeTarget "starChartTests" */ = {
 			isa = XCConfigurationList;
@@ -428,7 +419,6 @@
 				3E91A0EE1AE2355600F98BD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
