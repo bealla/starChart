@@ -65,17 +65,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unclickedStar.png" translatesAutoresizingMaskIntoConstraints="NO" id="2O5-OU-Jc8">
-                                <rect key="frame" x="33" y="553" width="43" height="42"/>
+                                <rect key="frame" x="66" y="553" width="43" height="42"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGc-hb-fwo">
-                                <rect key="frame" x="39" y="559" width="30" height="30"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="b1s1button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4EP-Yo-Vp3"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unclickedStar.png" translatesAutoresizingMaskIntoConstraints="NO" id="2fv-Uw-8r9">
+                                <rect key="frame" x="195" y="553" width="43" height="42"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unclickedStar.png" translatesAutoresizingMaskIntoConstraints="NO" id="pK9-si-4Qm">
+                                <rect key="frame" x="124" y="553" width="43" height="42"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOF-Il-kad">
                                 <rect key="frame" x="924" y="28" width="76" height="30"/>
                                 <state key="normal" title="hamButton">
@@ -83,6 +80,35 @@
                                 </state>
                                 <connections>
                                     <action selector="hamButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UYv-0M-gaS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGc-hb-fwo">
+                                <rect key="frame" x="69" y="559" width="37" height="36"/>
+                                <state key="normal" title="b1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="b1s1button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4EP-Yo-Vp3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvW-Oi-XMJ">
+                                <rect key="frame" x="130" y="556" width="37" height="36"/>
+                                <state key="normal" title="b2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="b1s1button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0kn-bw-Hdz"/>
+                                    <action selector="b1s2Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pxz-qx-ot5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zca-80-7CW">
+                                <rect key="frame" x="201" y="556" width="37" height="36"/>
+                                <state key="normal" title="b3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="b1s1button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GfY-O9-WTI"/>
+                                    <action selector="b1s3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="niJ-lU-BCy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -93,6 +119,8 @@
                     <connections>
                         <outlet property="appTitle" destination="WbG-nk-ULQ" id="V4f-SU-6dD"/>
                         <outlet property="b1s1" destination="2O5-OU-Jc8" id="Jif-2i-J9l"/>
+                        <outlet property="b1s2" destination="pK9-si-4Qm" id="VTE-Xb-xcE"/>
+                        <outlet property="b1s3" destination="2fv-Uw-8r9" id="Ed7-wz-JA6"/>
                         <outlet property="background" destination="Arz-xp-EQq" id="V9O-dF-YcJ"/>
                         <outlet property="behavior1Label" destination="4L2-OE-qxT" id="ZF6-jg-OfM"/>
                         <outlet property="behavior2Label" destination="7xw-XU-7Xo" id="xm0-vC-Nt3"/>

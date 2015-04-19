@@ -34,11 +34,28 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var b1s1: UIImageView!
     
+    
+    @IBOutlet weak var b1s2: UIImageView!
+    @IBOutlet weak var b1s3: UIImageView!
+    
     @IBAction func b1s1button(sender: AnyObject) {
-     b1s1.image = UIImage(named: ("starclicked.png"))
+        b1s1.image = UIImage(named: ("starclicked.png"))
+        b1s2.image = UIImage(named: ("unclickedStar.png"))
+        b1s3.image = UIImage(named: ("unclickedStar.png"))
     }
     
   
+    @IBAction func b1s2Button(sender: AnyObject) {
+        b1s1.image = UIImage(named: ("starclicked.png"))
+        b1s2.image = UIImage(named: ("starclicked.png"))
+        b1s3.image = UIImage(named: ("unclickedStar.png"))
+    }
+    
+    @IBAction func b1s3(sender: AnyObject) {
+        b1s1.image = UIImage(named: ("starclicked.png"))
+        b1s2.image = UIImage(named: ("starclicked.png"))
+        b1s3.image = UIImage(named: ("starclicked.png"))
+    }
     
     @IBAction func hamButton(sender: AnyObject) {
     }
