@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>AFED569D-A105-41CE-B4AE-DDCFA68E2F40</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>starChart</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>1EC8661CF1D73B9DDF7B5A524B302A37960F6D7C</key>
 		<string>https://github.com/bealla/starChart.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>starChart/starChart.xcodeproj/project.xcworkspace</string>
+	<string>starChart/starChart.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>1EC8661CF1D73B9DDF7B5A524B302A37960F6D7C</key>
