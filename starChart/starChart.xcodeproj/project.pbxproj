@@ -105,8 +105,8 @@
 				3E91A1011AE572B700F98BD4 /* addClassViewController.swift */,
 				3E91A0D61AE2355600F98BD4 /* Images.xcassets */,
 				3E91A0D81AE2355600F98BD4 /* LaunchScreen.xib */,
-				3E91A0CD1AE2355600F98BD4 /* Supporting Files */,
 				3E91A1031AE5745E00F98BD4 /* listofClassesViewController.swift */,
+				3E91A0CD1AE2355600F98BD4 /* Supporting Files */,
 			);
 			path = starChart;
 			sourceTree = "<group>";

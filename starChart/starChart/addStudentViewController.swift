@@ -9,7 +9,37 @@
 import UIKit
 
 class addStudentViewController: UIViewController {
+    
 
+    
+    @IBAction func deleteStudent(sender: AnyObject) {
+        //remove inactive student, or store as inactive, SQL
+        
+    }
+    
+    
+    @IBAction func saveStudentProfile(sender: AnyObject) {
+        //add student profile informatoin to databases, SQL when press save
+    }
+    
+    @IBAction func courseTitleSelector(sender: AnyObject) {
+        //popup will show up with classes populated from added clases in db, select class
+    }
+    
+  
+    @IBAction func coursePeriodSelector(sender: AnyObject) {
+        // //popup will show up with numbers 1-6, select corresponding period, for now lets just add classes, i think we can implement a stepper I just don't have that done yet 
+    }
+    
+   
+    @IBAction func addClass(sender: AnyObject) {
+        //add class to db, eventually display below for user to see
+    }
+    
+    
+    @IBAction func removeCourse(sender: AnyObject) {
+        //remove selected class from db, and eventually from display down below
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
