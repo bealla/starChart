@@ -126,6 +126,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate{
     }
     
     @IBAction func hamburgerButton(sender: AnyObject) {
+         //popover taking you to edit/add student or add class, no other functionality 
     }
     
     override func viewDidLoad() {

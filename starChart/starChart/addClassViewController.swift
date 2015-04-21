@@ -9,7 +9,10 @@
 import UIKit
 
 class addClassViewController: UIViewController {
+    //onclick save, add course title to database, SQL
+    @IBAction func saveClassInfo(sender: AnyObject) {
     
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
