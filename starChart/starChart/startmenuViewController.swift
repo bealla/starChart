@@ -1,28 +1,15 @@
 //
-//  addClassViewController.swift
+//  startmenuViewController.swift
 //  starChart
 //
-//  Created by Alexandra Beall on 4/20/15.
+//  Created by Alexandra Beall on 4/21/15.
 //  Copyright (c) 2015 Alexandra Beall. All rights reserved.
 //
 
 import UIKit
 
-class addClassViewController: UIViewController {
-    let tableData = ["One","Two","Three"]
+class startmenuViewController: UIViewController {
 
-    @IBAction func enterClass(sender: AnyObject) {
-        //textbox to recieve class
-        
-    }
-  //onclick save, add course title to database, SQL
-    @IBAction func saveClassInfo(sender: AnyObject) {
-        
-    }
-    
-    
-    @IBOutlet weak var tableView: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

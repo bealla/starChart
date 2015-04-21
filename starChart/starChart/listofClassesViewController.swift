@@ -10,10 +10,13 @@ import UIKit
 
 class listofClassesViewController: UIViewController {
 
+    @IBOutlet weak var classList: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //need to populate the table view with available classes from the database
     }
 
     override func didReceiveMemoryWarning() {

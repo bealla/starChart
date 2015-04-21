@@ -21,6 +21,9 @@
 		3E91A1001AE5727000F98BD4 /* addStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E91A0FF1AE5727000F98BD4 /* addStudentViewController.swift */; };
 		3E91A1021AE572B700F98BD4 /* addClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E91A1011AE572B700F98BD4 /* addClassViewController.swift */; };
 		3E91A1041AE5745E00F98BD4 /* listofClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E91A1031AE5745E00F98BD4 /* listofClassesViewController.swift */; };
+		3E91A1081AE6FE9200F98BD4 /* studentprofileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E91A1071AE6FE9200F98BD4 /* studentprofileViewController.swift */; };
+		3E91A1381AE716AE00F98BD4 /* startmenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E91A1371AE716AE00F98BD4 /* startmenuViewController.swift */; };
+		3E91A13A1AE7184500F98BD4 /* rateStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E91A1391AE7184500F98BD4 /* rateStudentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		3E91A0FF1AE5727000F98BD4 /* addStudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addStudentViewController.swift; sourceTree = "<group>"; };
 		3E91A1011AE572B700F98BD4 /* addClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addClassViewController.swift; sourceTree = "<group>"; };
 		3E91A1031AE5745E00F98BD4 /* listofClassesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listofClassesViewController.swift; sourceTree = "<group>"; };
+		3E91A1071AE6FE9200F98BD4 /* studentprofileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = studentprofileViewController.swift; sourceTree = "<group>"; };
+		3E91A1371AE716AE00F98BD4 /* startmenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = startmenuViewController.swift; sourceTree = "<group>"; };
+		3E91A1391AE7184500F98BD4 /* rateStudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rateStudentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +109,11 @@
 				3E91A0FD1AE56D9300F98BD4 /* hamButtonViewController.swift */,
 				3E91A0FF1AE5727000F98BD4 /* addStudentViewController.swift */,
 				3E91A1011AE572B700F98BD4 /* addClassViewController.swift */,
+				3E91A1071AE6FE9200F98BD4 /* studentprofileViewController.swift */,
+				3E91A1371AE716AE00F98BD4 /* startmenuViewController.swift */,
 				3E91A0D61AE2355600F98BD4 /* Images.xcassets */,
 				3E91A0D81AE2355600F98BD4 /* LaunchScreen.xib */,
+				3E91A1391AE7184500F98BD4 /* rateStudentViewController.swift */,
 				3E91A1031AE5745E00F98BD4 /* listofClassesViewController.swift */,
 				3E91A0CD1AE2355600F98BD4 /* Supporting Files */,
 			);
@@ -243,7 +252,10 @@
 				3E91A0FA1AE4817100F98BD4 /* SecondViewController.swift in Sources */,
 				3E91A1021AE572B700F98BD4 /* addClassViewController.swift in Sources */,
 				3E91A0FE1AE56D9300F98BD4 /* hamButtonViewController.swift in Sources */,
+				3E91A13A1AE7184500F98BD4 /* rateStudentViewController.swift in Sources */,
+				3E91A1081AE6FE9200F98BD4 /* studentprofileViewController.swift in Sources */,
 				3E91A0D21AE2355600F98BD4 /* ViewController.swift in Sources */,
+				3E91A1381AE716AE00F98BD4 /* startmenuViewController.swift in Sources */,
 				3E91A1001AE5727000F98BD4 /* addStudentViewController.swift in Sources */,
 				3E91A0D01AE2355600F98BD4 /* AppDelegate.swift in Sources */,
 			);

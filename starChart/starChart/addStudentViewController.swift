@@ -10,6 +10,8 @@ import UIKit
 
 class addStudentViewController: UIViewController {
     
+    let imageView = UIImageView(frame: CGRectMake(0, 0, 100, 100))
+    
 
     
     @IBAction func deleteStudent(sender: AnyObject) {
@@ -19,7 +21,7 @@ class addStudentViewController: UIViewController {
     
     
     @IBAction func saveStudentProfile(sender: AnyObject) {
-        //add student profile informatoin to databases, SQL when press save
+        //add student profile informatoin to databases, SQL when press save 
     }
     
     @IBAction func courseTitleSelector(sender: AnyObject) {
@@ -44,6 +46,7 @@ class addStudentViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.imageView.backgroundColor = UIColor.redColor()
     }
 
     override func didReceiveMemoryWarning() {
