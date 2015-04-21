@@ -20,7 +20,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>04101981B66E318109934C9516F88D824BB96459</key>
-		<string>../../..starChart/starChart/fmdb/</string>
+		<string>../../..starChart/starChart/fmdb</string>
 		<key>1EC8661CF1D73B9DDF7B5A524B302A37960F6D7C</key>
 		<string>../../..</string>
 	</dict>
