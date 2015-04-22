@@ -9,44 +9,12 @@
 import UIKit
 
 class studentprofileViewController: UIViewController {
-  //let topbarColor = UIColor(red:70.0, green:24.0,blue:76.0,alpha:1.0)
+  
 
+    @IBOutlet var listofStudents: UITableView!
+    //when student selected go to rateStudentview controller and populate accordingly
 
-    @IBOutlet weak var rainbowLevel: UIImageView!
-    @IBOutlet weak var redLevel: UIImageView!
-    @IBOutlet weak var yellowLevel: UIImageView!
-    @IBOutlet weak var greenLevel: UIImageView!
-    @IBOutlet weak var commentBoxBackground: UIImageView!
-   
-    //beahvior text labels
-    @IBOutlet weak var behavior1: UILabel!
-    
-    @IBOutlet weak var behavior2: UILabel!
-    
-    @IBOutlet weak var behavior3: UILabel!
-    
-    
-    //behavior 1 coin images
-    @IBOutlet weak var b1s1: UIImageView!
-    @IBOutlet weak var b1s2: UIImageView!
-    @IBOutlet weak var b1s3: UIImageView!
-    
-    
-    //behavior 2 coin images
-    @IBOutlet weak var b2s1: UIImageView!
-    
-    @IBOutlet weak var b2s2: UIImageView!
-    
-    @IBOutlet weak var b2s3: UIImageView!
-    
-    //behavior 2 coin images 
-    
-    @IBOutlet weak var b3s1: UIImageView!
-    
-    
-    @IBOutlet weak var b3s2: UIImageView!
-    
-    @IBOutlet weak var b3s3: UIImageView!
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()

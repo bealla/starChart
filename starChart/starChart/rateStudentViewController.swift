@@ -29,11 +29,16 @@ class rateStudentViewController: UIViewController {
     @IBOutlet weak var b3s2: UIImageView!
     
     @IBOutlet weak var b3s3: UIImageView!
+    @IBOutlet weak var currentStudent: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    //set button "view/currentStudent" text to name selected from list of students talbe from datacase
+    //currentStudent.text = "\(pull name from database and instert here)"
     
  /*   //displaying stars/recording them in database
    // if (there is star info in db for student){
