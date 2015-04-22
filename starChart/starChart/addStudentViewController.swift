@@ -9,6 +9,7 @@
 import UIKit
 
 class addStudentViewController: UIViewController {
+    let imageView = UIImageView(frame: CGRectMake(0, 0, 100, 100))
     
     @IBAction func deleteStudent(sender: AnyObject) {
         //remove inactive student, or store as inactive, SQL
@@ -42,6 +43,7 @@ class addStudentViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        self.imageView.backgroundColor = UIColor.redColor()
     }
     
     override func didReceiveMemoryWarning() {

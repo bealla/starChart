@@ -18,6 +18,9 @@
 		912AAA231AE5DE90008837C1 /* addStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912AAA221AE5DE90008837C1 /* addStudentViewController.swift */; };
 		912AAA251AE5DEB8008837C1 /* hamButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912AAA241AE5DEB8008837C1 /* hamButtonViewController.swift */; };
 		912AAA271AE5DEE0008837C1 /* listofClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912AAA261AE5DEE0008837C1 /* listofClassesViewController.swift */; };
+		912AAA291AE7223D008837C1 /* rateStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912AAA281AE7223D008837C1 /* rateStudentViewController.swift */; };
+		912AAA2B1AE72296008837C1 /* startMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912AAA2A1AE72296008837C1 /* startMenuViewController.swift */; };
+		912AAA2D1AE722ED008837C1 /* studentProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912AAA2C1AE722ED008837C1 /* studentProfileViewController.swift */; };
 		91C812131AE3542E00D41EE1 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C812091AE3542E00D41EE1 /* FMDatabase.m */; };
 		91C812141AE3542E00D41EE1 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8120B1AE3542E00D41EE1 /* FMDatabaseAdditions.m */; };
 		91C812151AE3542E00D41EE1 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8120D1AE3542E00D41EE1 /* FMDatabasePool.m */; };
@@ -52,6 +55,9 @@
 		912AAA221AE5DE90008837C1 /* addStudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addStudentViewController.swift; sourceTree = "<group>"; };
 		912AAA241AE5DEB8008837C1 /* hamButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hamButtonViewController.swift; sourceTree = "<group>"; };
 		912AAA261AE5DEE0008837C1 /* listofClassesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listofClassesViewController.swift; sourceTree = "<group>"; };
+		912AAA281AE7223D008837C1 /* rateStudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rateStudentViewController.swift; sourceTree = "<group>"; };
+		912AAA2A1AE72296008837C1 /* startMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = startMenuViewController.swift; sourceTree = "<group>"; };
+		912AAA2C1AE722ED008837C1 /* studentProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = studentProfileViewController.swift; sourceTree = "<group>"; };
 		91C811F71AE3531600D41EE1 /* starChart-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "starChart-Bridging-Header.h"; sourceTree = "<group>"; };
 		91C812081AE3542E00D41EE1 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		91C812091AE3542E00D41EE1 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
@@ -110,11 +116,14 @@
 			children = (
 				3E91A0CF1AE2355600F98BD4 /* AppDelegate.swift */,
 				3E91A0D11AE2355600F98BD4 /* ViewController.swift */,
+				912AAA2A1AE72296008837C1 /* startMenuViewController.swift */,
+				912AAA2C1AE722ED008837C1 /* studentProfileViewController.swift */,
 				912AAA1E1AE5DE2A008837C1 /* SecondViewController.swift */,
 				912AAA201AE5DE6A008837C1 /* addClassViewController.swift */,
 				912AAA221AE5DE90008837C1 /* addStudentViewController.swift */,
 				912AAA241AE5DEB8008837C1 /* hamButtonViewController.swift */,
 				912AAA261AE5DEE0008837C1 /* listofClassesViewController.swift */,
+				912AAA281AE7223D008837C1 /* rateStudentViewController.swift */,
 				3E91A0D31AE2355600F98BD4 /* Main.storyboard */,
 				3E91A0D61AE2355600F98BD4 /* Images.xcassets */,
 				3E91A0D81AE2355600F98BD4 /* LaunchScreen.xib */,
@@ -266,10 +275,13 @@
 				3E91A0D21AE2355600F98BD4 /* ViewController.swift in Sources */,
 				91C812171AE3542E00D41EE1 /* FMResultSet.m in Sources */,
 				912AAA211AE5DE6A008837C1 /* addClassViewController.swift in Sources */,
+				912AAA2D1AE722ED008837C1 /* studentProfileViewController.swift in Sources */,
 				91C812151AE3542E00D41EE1 /* FMDatabasePool.m in Sources */,
 				3E91A0D01AE2355600F98BD4 /* AppDelegate.swift in Sources */,
 				91C812141AE3542E00D41EE1 /* FMDatabaseAdditions.m in Sources */,
+				912AAA2B1AE72296008837C1 /* startMenuViewController.swift in Sources */,
 				912AAA231AE5DE90008837C1 /* addStudentViewController.swift in Sources */,
+				912AAA291AE7223D008837C1 /* rateStudentViewController.swift in Sources */,
 				91C812161AE3542E00D41EE1 /* FMDatabaseQueue.m in Sources */,
 				912AAA251AE5DEB8008837C1 /* hamButtonViewController.swift in Sources */,
 			);
@@ -440,6 +452,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = starChartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/starChart.app/starChart";
@@ -455,6 +468,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = starChartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/starChart.app/starChart";

@@ -30,7 +30,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate{
     @IBOutlet weak var behavior3Label: UILabel!
     
     @IBOutlet weak var appTitle: UILabel!
-    
+    /*
     //star coin images for each behavior
     @IBOutlet weak var b1s1: UIImageView!
     @IBOutlet weak var b1s2: UIImageView!
@@ -109,7 +109,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate{
         b3s1.image = UIImage(named: ("starclicked.png"))
         b3s2.image = UIImage(named: ("starclicked.png"))
         b3s3.image = UIImage(named: ("starclicked.png"))
-    }
+    } */
 
     var databasePath = NSString()
     

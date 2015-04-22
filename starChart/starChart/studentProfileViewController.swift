@@ -1,37 +1,42 @@
 //
-//  addClassViewController.swift
+//  studentprofileViewController.swift
 //  starChart
 //
-//  Created by Alexandra Beall on 4/20/15.
+//  Created by Alexandra Beall on 4/21/15.
 //  Copyright (c) 2015 Alexandra Beall. All rights reserved.
 //
 
 import UIKit
 
-class addClassViewController: UIViewController {
-    let tableData = ["One","Two","Three"]
+class studentprofileViewController: UIViewController {
+    //let topbarColor = UIColor(red:70.0, green:24.0,blue:76.0,alpha:1.0)
     
-    @IBAction func enterClass(sender: AnyObject) {
-        //textbox to recieve class
-        
-    }
-    //onclick save, add course title to database, SQL
-    @IBAction func saveClassInfo(sender: AnyObject) {
     
-    }
+    @IBOutlet weak var rainbowLevel: UIImageView!
+    @IBOutlet weak var redLevel: UIImageView!
+    @IBOutlet weak var yellowLevel: UIImageView!
+    @IBOutlet weak var greenLevel: UIImageView!
+    @IBOutlet weak var commentBoxBackground: UIImageView!
     
-    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func filStar(){
+        //KATE
+        //set each part of star tail to visible as stars are earned and tracked in database
+    }
+    
+    
     
     
     /*
