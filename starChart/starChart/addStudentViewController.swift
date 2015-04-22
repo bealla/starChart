@@ -15,7 +15,18 @@ class addStudentViewController: UIViewController {
     @IBOutlet weak var last: UITextField!
     @IBOutlet weak var suffix: UITextField!
     @IBOutlet weak var status: UILabel!
+    @IBOutlet weak var p1: UITextField!
+    @IBOutlet weak var p2: UITextField!
+    @IBOutlet weak var p3: UITextField!
+    @IBOutlet weak var p4: UITextField!
+    @IBOutlet weak var p5: UITextField!
+    @IBOutlet weak var p6: UITextField!
+    @IBOutlet weak var p7: UITextField!
+    @IBOutlet weak var p8: UITextField!
+    @IBOutlet weak var p9: UITextField!
+    @IBOutlet weak var p10: UITextField!
     
+    //var name: String = first.text + " " + last.text + " " + suffix.text
     
     var databasePath = NSString()
     
@@ -27,14 +38,14 @@ class addStudentViewController: UIViewController {
     
     @IBAction func saveStudentProfile(sender: AnyObject) {
         //add student profile informatoin to databases, SQL when press save
-        //var name: String = first.text + " " + last.text + " " + suffix.text
+        
         println ("save student")
         
         let contactDB = FMDatabase(path: databasePath as String)
         
         if contactDB.open() {
             
-            let insertSQL = "INSERT INTO STUDENT (name) VALUES ('\(first.text)')"
+            let insertSQL = "INSERT INTO STUDENT (name) VALUES ('\(first.text)');"
             
             let result = contactDB.executeUpdate(insertSQL,
                 withArgumentsInArray: nil)
@@ -51,7 +62,33 @@ class addStudentViewController: UIViewController {
         }
     }
     
-    @IBAction func courseTitleSelector(sender: AnyObject) {
+    @IBAction func findStudent(sender: AnyObject) {
+        //looks to see if student already exists, populates class data
+        println("find student")
+        let contactDB = FMDatabase(path: databasePath as String)
+        
+        if contactDB.open() {
+            let querySQL = "SELECT name FROM COURSES WHERE cid IN (SELECT cid FROM STUDENTCLASS WHERE name = '\(first.text)'"
+            
+            let results:FMResultSet? = contactDB.executeQuery(querySQL,
+                withArgumentsInArray: nil)
+            
+            if results?.next() == true {
+                //address.text = results?.stringForColumn("address")
+                //phone.text = results?.stringForColumn("phone")
+                status.text = "Record Found"
+            } else {
+                status.text = "Record not found"
+                //address.text = ""
+                //phone.text = ""
+            }
+            contactDB.close()
+        } else {
+            println("Error: \(contactDB.lastErrorMessage())")
+        }
+    }
+    
+    /*@IBAction func courseTitleSelector(sender: AnyObject) {
         //popup will show up with classes populated from added clases in db, select class
         println ("course title select")
         
@@ -61,12 +98,32 @@ class addStudentViewController: UIViewController {
     @IBAction func coursePeriodSelector(sender: AnyObject) {
         // //popup will show up with numbers 1-6, select corresponding period, for now lets just add classes, i think we can implement a stepper I just don't have that done yet
         println ("course period select")
-    }
+    }*/
     
     
     @IBAction func addClass(sender: AnyObject) {
         //add class to db, eventually display below for user to see
         println ("add class")
+        
+        let contactDB = FMDatabase(path: databasePath as String)
+        
+        if contactDB.open() {
+            
+            let insertSQL = "INSERT INTO STUDENTCLASS(sid, cid, period) SELECT STUDENT.sid,COURSES.cid, 1 FROM STUDENT,COURSES WHERE COURSES.name = ('\(p1.text)') AND STUDENT.name = ('\(first.text)');"
+            
+            let result = contactDB.executeUpdate(insertSQL,
+                withArgumentsInArray: nil)
+            
+            if !result {
+                status.text = "Failed to add student class"
+                println("Error: \(contactDB.lastErrorMessage())")
+            } else {
+                status.text = "Course Added"
+                p1.text = ""
+            }
+        } else {
+            println("Error: \(contactDB.lastErrorMessage())")
+        }
     }
     
     
@@ -101,7 +158,7 @@ class addStudentViewController: UIViewController {
         println ("adding table?")
         let starchartDB = FMDatabase(path: databasePath as String)
         if starchartDB.open() {
-            let sql_stmt = "CREATE TABLE IF NOT EXISTS STUDENT (ID INTEGER PRIMARY KEY AUTOINCREMENT, SID MEDIUMINT AUTO_INCREMENT, NAME TEXT)"
+            let sql_stmt = "CREATE TABLE IF NOT EXISTS STUDENT (ID INTEGER PRIMARY KEY AUTOINCREMENT, SID MEDIUMINT AUTO_INCREMENT, NAME TEXT); CREATE TABLE IF NOT EXISTS STUDENTCLASS (ID INTEGER PRIMARY KEY AUTOINCREMENT, SID MEDIUMINT, CID MEDIUMINT, PERIOD INTEGER);"
             if !starchartDB.executeStatements(sql_stmt) {
                 println("Error: \(starchartDB.lastErrorMessage())")
             }
