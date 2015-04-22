@@ -11,6 +11,7 @@ import UIKit
 class listofClassesViewController: UIViewController {
 
     @IBOutlet weak var classList: UITableView!
+    //need to populate table view with list of classes from db
     
     override func viewDidLoad() {
         super.viewDidLoad()

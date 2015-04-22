@@ -24,6 +24,7 @@
 		3E91A1081AE6FE9200F98BD4 /* studentprofileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E91A1071AE6FE9200F98BD4 /* studentprofileViewController.swift */; };
 		3E91A1381AE716AE00F98BD4 /* startmenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E91A1371AE716AE00F98BD4 /* startmenuViewController.swift */; };
 		3E91A13A1AE7184500F98BD4 /* rateStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E91A1391AE7184500F98BD4 /* rateStudentViewController.swift */; };
+		3E91A13C1AE797F600F98BD4 /* filledCoin.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3E91A13B1AE797F600F98BD4 /* filledCoin.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		3E91A1071AE6FE9200F98BD4 /* studentprofileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = studentprofileViewController.swift; sourceTree = "<group>"; };
 		3E91A1371AE716AE00F98BD4 /* startmenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = startmenuViewController.swift; sourceTree = "<group>"; };
 		3E91A1391AE7184500F98BD4 /* rateStudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rateStudentViewController.swift; sourceTree = "<group>"; };
+		3E91A13B1AE797F600F98BD4 /* filledCoin.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = filledCoin.pdf; path = ../../../../Desktop/filledCoin.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				3E91A0F51AE452B100F98BD4 /* unclickedStar.png */,
 				3E91A0F71AE452B500F98BD4 /* starclicked.png */,
 				3E91A0FB1AE4E6F500F98BD4 /* filledCoin.svg */,
+				3E91A13B1AE797F600F98BD4 /* filledCoin.pdf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E91A13C1AE797F600F98BD4 /* filledCoin.pdf in Resources */,
 				3E91A0F81AE452B500F98BD4 /* starclicked.png in Resources */,
 				3E91A0F61AE452B100F98BD4 /* unclickedStar.png in Resources */,
 				3E91A0D51AE2355600F98BD4 /* Main.storyboard in Resources */,

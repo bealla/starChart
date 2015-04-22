@@ -10,6 +10,13 @@ import UIKit
 
 class startmenuViewController: UIViewController {
 
+    @IBOutlet weak var starchart: UILabel!
+    @IBAction func hambutton(sender: AnyObject) {
+    }
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

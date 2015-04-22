@@ -18,6 +18,35 @@ class studentprofileViewController: UIViewController {
     @IBOutlet weak var greenLevel: UIImageView!
     @IBOutlet weak var commentBoxBackground: UIImageView!
    
+    //beahvior text labels
+    @IBOutlet weak var behavior1: UILabel!
+    
+    @IBOutlet weak var behavior2: UILabel!
+    
+    @IBOutlet weak var behavior3: UILabel!
+    
+    
+    //behavior 1 coin images
+    @IBOutlet weak var b1s1: UIImageView!
+    @IBOutlet weak var b1s2: UIImageView!
+    @IBOutlet weak var b1s3: UIImageView!
+    
+    
+    //behavior 2 coin images
+    @IBOutlet weak var b2s1: UIImageView!
+    
+    @IBOutlet weak var b2s2: UIImageView!
+    
+    @IBOutlet weak var b2s3: UIImageView!
+    
+    //behavior 2 coin images 
+    
+    @IBOutlet weak var b3s1: UIImageView!
+    
+    
+    @IBOutlet weak var b3s2: UIImageView!
+    
+    @IBOutlet weak var b3s3: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +62,7 @@ class studentprofileViewController: UIViewController {
     
     func filStar(){
         //KATE
-        //set each part of star tail to visible as stars are earned and tracked in database
+        //set each part of star tail to visible as stars are earned and tracked in database and set each image to filled if stored in database
     }
     
     
