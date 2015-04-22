@@ -40,7 +40,7 @@ class addClassViewController: UIViewController {
         }
         let starchartDB = FMDatabase(path: databasePath as String)
         if starchartDB.open() {
-            let sql_stmt = "CREATE TABLE IF NOT EXISTS COURSES (ID INTEGER PRIMARY KEY AUTOINCREMENT, CID MEDIUMINT AUTO_INCREMENT, NAME TEXT, BEGIN DATE, END DATE)"
+            let sql_stmt = "CREATE TABLE IF NOT EXISTS COURSES (ID INTEGER PRIMARY KEY AUTOINCREMENT, CID INTEGER AUTO_INCREMENT, NAME TEXT, BEGIN DATE, END DATE)"
             if !starchartDB.executeStatements(sql_stmt) {
                 println("Error: \(starchartDB.lastErrorMessage())")
             }

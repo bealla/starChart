@@ -28,6 +28,8 @@ class addStudentViewController: UIViewController {
     
     //var name: String = first.text + " " + last.text + " " + suffix.text
     
+    
+    
     var databasePath = NSString()
     
    /* @IBAction func deleteStudent(sender: AnyObject) {
@@ -68,18 +70,20 @@ class addStudentViewController: UIViewController {
         let contactDB = FMDatabase(path: databasePath as String)
         
         if contactDB.open() {
-            let querySQL = "SELECT name FROM COURSES WHERE cid IN (SELECT cid FROM STUDENTCLASS WHERE name = '\(first.text)'"
+            //"SELECT address, phone FROM CONTACTS WHERE name = '\(name.text)'"
+            let querySQL = "SELECT COURSES.name FROM COURSES WHERE COURSES.id IN (SELECT STUDENTCLASS.id FROM STUDENTCLASS WHERE STUDENTCLASS.id IN (SELECT STUDENT.id FROM STUDENT WHERE name = '\(first.text)'));"
             
             let results:FMResultSet? = contactDB.executeQuery(querySQL,
                 withArgumentsInArray: nil)
             
             if results?.next() == true {
-                //address.text = results?.stringForColumn("address")
+                p1.text = results?.stringForColumn("name")
+                println(results?.stringForColumn("name"))
                 //phone.text = results?.stringForColumn("phone")
                 status.text = "Record Found"
             } else {
                 status.text = "Record not found"
-                //address.text = ""
+                p1.text = ""
                 //phone.text = ""
             }
             contactDB.close()
@@ -109,7 +113,7 @@ class addStudentViewController: UIViewController {
         
         if contactDB.open() {
             
-            let insertSQL = "INSERT INTO STUDENTCLASS(sid, cid, period) SELECT STUDENT.sid,COURSES.cid, 1 FROM STUDENT,COURSES WHERE COURSES.name = ('\(p1.text)') AND STUDENT.name = ('\(first.text)');"
+            let insertSQL = "INSERT OR REPLACE INTO STUDENTCLASS(sid, cid, period) SELECT STUDENT.id,COURSES.id, 1 FROM STUDENT,COURSES WHERE COURSES.name = ('\(p1.text)') AND STUDENT.name = ('\(first.text)'); INSERT OR REPLACE INTO STUDENTCLASS(sid, cid, period) SELECT STUDENT.id,COURSES.id, 2 FROM STUDENT,COURSES WHERE COURSES.name = ('\(p2.text)') AND STUDENT.name = ('\(first.text)'); INSERT OR REPLACE INTO STUDENTCLASS(sid, cid, period) SELECT STUDENT.id,COURSES.id, 3 FROM STUDENT,COURSES WHERE COURSES.name = ('\(p3.text)') AND STUDENT.name = ('\(first.text)'); INSERT OR REPLACE INTO STUDENTCLASS(sid, cid, period) SELECT STUDENT.id,COURSES.id, 4 FROM STUDENT,COURSES WHERE COURSES.name = ('\(p4.text)') AND STUDENT.name = ('\(first.text)'); INSERT OR REPLACE INTO STUDENTCLASS(sid, cid, period) SELECT STUDENT.id,COURSES.id, 5 FROM STUDENT,COURSES WHERE COURSES.name = ('\(p5.text)') AND STUDENT.name = ('\(first.text)'); INSERT OR REPLACE INTO STUDENTCLASS(sid, cid, period) SELECT STUDENT.id,COURSES.id, 6 FROM STUDENT,COURSES WHERE COURSES.name = ('\(p6.text)') AND STUDENT.name = ('\(first.text)'); INSERT OR REPLACE INTO STUDENTCLASS(sid, cid, period) SELECT STUDENT.id,COURSES.id, 7 FROM STUDENT,COURSES WHERE COURSES.name = ('\(p7.text)') AND STUDENT.name = ('\(first.text)'); INSERT OR REPLACE INTO STUDENTCLASS(sid, cid, period) SELECT STUDENT.id,COURSES.id, 8 FROM STUDENT,COURSES WHERE COURSES.name = ('\(p8.text)') AND STUDENT.name = ('\(first.text)'); INSERT OR REPLACE INTO STUDENTCLASS(sid, cid, period) SELECT STUDENT.id,COURSES.id, 9 FROM STUDENT,COURSES WHERE COURSES.name = ('\(p9.text)') AND STUDENT.name = ('\(first.text)'); INSERT OR REPLACE INTO STUDENTCLASS(sid, cid, period) SELECT STUDENT.id,COURSES.id, 10 FROM STUDENT,COURSES WHERE COURSES.name = ('\(p10.text)') AND STUDENT.name = ('\(first.text)');"
             
             let result = contactDB.executeUpdate(insertSQL,
                 withArgumentsInArray: nil)
@@ -130,6 +134,7 @@ class addStudentViewController: UIViewController {
     @IBAction func removeCourse(sender: AnyObject) {
         //remove selected class from db, and eventually from display down below
         println ("remove class")
+        
     }
     
     override func viewDidLoad() {
@@ -158,7 +163,7 @@ class addStudentViewController: UIViewController {
         println ("adding table?")
         let starchartDB = FMDatabase(path: databasePath as String)
         if starchartDB.open() {
-            let sql_stmt = "CREATE TABLE IF NOT EXISTS STUDENT (ID INTEGER PRIMARY KEY AUTOINCREMENT, SID MEDIUMINT AUTO_INCREMENT, NAME TEXT); CREATE TABLE IF NOT EXISTS STUDENTCLASS (ID INTEGER PRIMARY KEY AUTOINCREMENT, SID MEDIUMINT, CID MEDIUMINT, PERIOD INTEGER);"
+            let sql_stmt = "CREATE TABLE IF NOT EXISTS STUDENT (ID INTEGER PRIMARY KEY AUTOINCREMENT, SID INTEGER AUTOINCREMENT, NAME TEXT); CREATE TABLE IF NOT EXISTS STUDENTCLASS (ID INTEGER PRIMARY KEY AUTOINCREMENT, SID INTEGER, CID INTEGER, PERIOD INTEGER);"
             if !starchartDB.executeStatements(sql_stmt) {
                 println("Error: \(starchartDB.lastErrorMessage())")
             }
