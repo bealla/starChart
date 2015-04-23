@@ -12,7 +12,6 @@ class addStudentViewController: UIViewController {
     let imageView = UIImageView(frame: CGRectMake(0, 0, 100, 100))
     
     @IBOutlet weak var first: UITextField!
-    @IBOutlet weak var status: UILabel!
     @IBOutlet weak var p1: UITextField!
     @IBOutlet weak var p2: UITextField!
     @IBOutlet weak var p3: UITextField!
@@ -23,6 +22,8 @@ class addStudentViewController: UIViewController {
     @IBOutlet weak var p8: UITextField!
     @IBOutlet weak var p9: UITextField!
     @IBOutlet weak var p10: UITextField!
+    @IBOutlet weak var status: UILabel!
+    
     
     //var name: String = first.text + " " + last.text + " " + suffix.text
     
@@ -60,32 +61,6 @@ class addStudentViewController: UIViewController {
         } else {
             println("Error: \(contactDB.lastErrorMessage())")
         }
-        
-        /*for index in 1...10{
-            if contactDB.open() {
-                println(index)
-                let querySQL = "INSERT INTO STUDENTCLASS(sid, cid, period) SELECT STUDENT.id,COURSES.id, '\(index)' FROM STUDENT,COURSES WHERE COURSES.name = ('\(periodList[index-1])') AND STUDENT.name = ('\(first.text)');"
-                
-                let results:FMResultSet? = contactDB.executeQuery(querySQL,
-                    withArgumentsInArray: nil)
-                
-                if results?.next() == true {
-                    //p1.text = results?.stringForColumn("name")
-                    //p2.text = results?.stringForColumn("name")
-                    //p3.text = results?.stringForColumn("name")
-                    println(results?.stringForColumn("name"))
-                    //currentClassList[index-1] = results?.stringForColumn("name")
-                    status.text = "Class List Initialized"
-                } else {
-                    status.text = "Class List Not Initialized"
-                    p1.text = ""
-                    //phone.text = "" AND STUDENTCLASS.period = '\(index)'
-                }
-                contactDB.close()
-            } else {
-                println("Error: \(contactDB.lastErrorMessage())")
-            }
-        }*/
         studentName()
     }
     
@@ -178,7 +153,15 @@ class addStudentViewController: UIViewController {
                 } else {
                     status.text = "Record not found"
                     p1.text = ""
-                    //phone.text = "" AND STUDENTCLASS.period = '\(index)'
+                    p2.text = ""
+                    p3.text = ""
+                    p4.text = ""
+                    p5.text = ""
+                    p6.text = ""
+                    p7.text = ""
+                    p8.text = ""
+                    p9.text = ""
+                    p10.text = ""
                 }
                 contactDB.close()
             } else {
