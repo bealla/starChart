@@ -13,10 +13,10 @@ class rateStudentViewController: UIViewController {
     
     @IBOutlet weak var b1s1: UIImageView!
     
+    
     @IBOutlet weak var b1s2: UIImageView!
     
     @IBOutlet weak var b1s3: UIImageView!
-    
     
     @IBOutlet weak var b2s1: UIImageView!
     
@@ -35,64 +35,104 @@ class rateStudentViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    /*   //displaying stars/recording them in database
+    // if (there is star info in db for student){
+    for (each behavior in db){
+    //    switch (amount of stars from db) {
+    case 1:{
+    b1s1.image = UIImage(named: ("starclicked.png"))
+    b1s2.image = UIImage(named: ("unclickedStar.png"))
+    b1s3.image = UIImage(named: ("unclickedStar.png"))
+    
+    }
+    case 2:{
+    b1s1.image = UIImage(named: ("starclicked.png"))
+    b1s2.image = UIImage(named: ("starclicked.png"))
+    b1s3.image = UIImage(named: ("unclickedStar.png"))
+    
+    }
+    case 3: {
+    b1s1.image = UIImage(named: ("starclicked.png"))
+    b1s2.image = UIImage(named: ("starclicked.png"))
+    b1s3.image = UIImage(named: ("starclicked.png"))
+    
+    }
+    
+    }
+    } else{
+    
     @IBOutlet weak var textBox: UITextView!
     @IBAction func b1s1button(sender: AnyObject) {
-        b1s1.image = UIImage(named: ("starclicked.png"))
-        b1s2.image = UIImage(named: ("unclickedStar.png"))
-        b1s3.image = UIImage(named: ("unclickedStar.png"))
+    b1s1.image = UIImage(named: ("starclicked.png"))
+    b1s2.image = UIImage(named: ("unclickedStar.png"))
+    b1s3.image = UIImage(named: ("unclickedStar.png"))
+    //save amount in database
+    //update total number of stars for rainbow
     }
     @IBAction func b1s2button(sender: AnyObject) {
-        b1s1.image = UIImage(named: ("starclicked.png"))
-        b1s2.image = UIImage(named: ("starclicked.png"))
-        b1s3.image = UIImage(named: ("unclickedStar.png"))
+    b1s1.image = UIImage(named: ("starclicked.png"))
+    b1s2.image = UIImage(named: ("starclicked.png"))
+    b1s3.image = UIImage(named: ("unclickedStar.png"))
+    //save amount in database
+    //update total number of stars for rainbow
     }
     @IBAction func b1s3button(sender: AnyObject) {
-        b1s1.image = UIImage(named: ("starclicked.png"))
-        b1s2.image = UIImage(named: ("starclicked.png"))
-        b1s3.image = UIImage(named: ("starclicked.png"))
+    b1s1.image = UIImage(named: ("starclicked.png"))
+    b1s2.image = UIImage(named: ("starclicked.png"))
+    b1s3.image = UIImage(named: ("starclicked.png"))
+    //save amount in database
+    //update total number of stars for rainbow
     }
     @IBAction func b2s2button(sender: AnyObject) {
-        b2s1.image = UIImage(named: ("starclicked.png"))
-        b2s2.image = UIImage(named: ("unclickedStar.png"))
-        b2s3.image = UIImage(named: ("unclickedStar.png"))
+    b2s1.image = UIImage(named: ("starclicked.png"))
+    b2s2.image = UIImage(named: ("unclickedStar.png"))
+    b2s3.image = UIImage(named: ("unclickedStar.png"))
+    //save amount in database
+    //update total number of stars for rainbow
     }
     @IBAction func b2s3button(sender: AnyObject) {
-        b2s1.image = UIImage(named: ("starclicked.png"))
-        b2s2.image = UIImage(named: ("starclicked.png"))
-        b2s3.image = UIImage(named: ("unclickedStar.png"))
+    b2s1.image = UIImage(named: ("starclicked.png"))
+    b2s2.image = UIImage(named: ("starclicked.png"))
+    b2s3.image = UIImage(named: ("unclickedStar.png"))
+    //save amount in database
+    //update total number of stars for rainbow
     }
     
     @IBAction func b3s1button(sender: AnyObject) {
-        b2s1.image = UIImage(named: ("starclicked.png"))
-        b2s2.image = UIImage(named: ("starclicked.png"))
-        b2s3.image = UIImage(named: ("starclicked.png"))
+    b2s1.image = UIImage(named: ("starclicked.png"))
+    b2s2.image = UIImage(named: ("starclicked.png"))
+    b2s3.image = UIImage(named: ("starclicked.png"))
+    //save amount in database
+    //update total number of stars for rainbow
     }
     @IBAction func b3s2button(sender: AnyObject) {
-        b3s1.image = UIImage(named: ("starclicked.png"))
-        b3s2.image = UIImage(named: ("unclickedStar.png"))
-        b3s3.image = UIImage(named: ("unclickedStar.png"))
+    b3s1.image = UIImage(named: ("starclicked.png"))
+    b3s2.image = UIImage(named: ("unclickedStar.png"))
+    b3s3.image = UIImage(named: ("unclickedStar.png"))
+    //save amount in database
+    //update total number of stars for rainbow
     }
     
     @IBAction func b3s3button(sender: AnyObject) {
-        b3s1.image = UIImage(named: ("starclicked.png"))
-        b3s2.image = UIImage(named: ("starclicked.png"))
-        b3s3.image = UIImage(named: ("unclickedStar.png"))
-        
-        //b3s1.image = UIImage(named: ("starclicked.png"))
-        //b3s2.image = UIImage(named: ("starclicked.png"))
-        //b3s3.image = UIImage(named: ("starclicked.png"))
-    }
-    @IBAction func save(sender: AnyObject) {
-        //add star/comment info to DB
-    }
+    b3s1.image = UIImage(named: ("starclicked.png"))
+    b3s2.image = UIImage(named: ("starclicked.png"))
+    b3s3.image = UIImage(named: ("unclickedStar.png"))
+    //save amount in database
+    //update total number of stars for rainbow
     
-    /*
-    // MARK: - Navigation
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+    //b3s1.image = UIImage(named: ("starclicked.png"))
+    //b3s2.image = UIImage(named: ("starclicked.png"))
+    //b3s3.image = UIImage(named: ("starclicked.png"))
     }
-    */
+    }
+    // if (comment saved in db) {
+    //update text in textBox
+    //} else{
+    // @IBAction func save(sender: AnyObject) {
+    //add star/comment info to DB
+    // }
+    //} */
+    
+    
     
 }

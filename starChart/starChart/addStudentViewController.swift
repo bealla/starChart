@@ -157,7 +157,6 @@ class addStudentViewController: UIViewController {
             if contactDB.open() {
                 //println(index)
                 let querySQL = "SELECT name FROM COURSES WHERE COURSES.id = (SELECT cid FROM STUDENTCLASS WHERE period = \(index) AND sid = (SELECT STUDENT.id FROM STUDENT WHERE name = '\(first.text)'));"
-                //"SELECT COURSES.name FROM COURSES WHERE COURSES.id IN (SELECT STUDENTCLASS.period FROM STUDENTCLASS WHERE STUDENTCLASS.period = \(index) IN (SELECT STUDENTCLASS.id FROM STUDENTCLASS WHERE STUDENTCLASS.id IN (SELECT STUDENT.id FROM STUDENT WHERE name = '\(first.text)')));"
                 
                 let results:FMResultSet? = contactDB.executeQuery(querySQL,
                     withArgumentsInArray: nil)
