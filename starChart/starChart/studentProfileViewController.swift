@@ -12,7 +12,7 @@ class studentprofileViewController: UIViewController, UITableViewDataSource, UIT
     
     var databasePath = NSString()
     @IBOutlet var listofStudents: UITableView!
-
+    
     //when student selected go to rateStudentview controller and populate accordingly
     var tableData = ["one", "two", "", "", "", "", "", "", "", ""]
     
@@ -27,6 +27,12 @@ class studentprofileViewController: UIViewController, UITableViewDataSource, UIT
         cell.textLabel?.text = tableData[indexPath.row]
         
         return cell
+    }
+    
+    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+        let alert = UIAlertController(title: "Name selected", message: "You selected \(tableData[indexPath.row])", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
     func studentName(){

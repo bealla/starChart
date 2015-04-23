@@ -109,7 +109,7 @@
             <objects>
                 <viewController id="4ng-mr-JK8" customClass="studentprofileViewController" customModule="starChart" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="b5l-aZ-vst">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" red="0.47843137250000001" green="0.2274509804" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ziQ-yO-sgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-548" y="-1241"/>
+            <point key="canvasLocation" x="-575" y="-910"/>
         </scene>
         <!--Startmenu View Controller-->
         <scene sceneID="tNg-lC-OKx">
@@ -425,6 +425,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HTT-bb-IOF">
                                 <rect key="frame" x="0.0" y="79" width="1030" height="81"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Student Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcq-TA-USE">
+                                <rect key="frame" x="214" y="109" width="197" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.47843137254901963" green="0.22745098039215686" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -435,11 +441,12 @@
                         <outlet property="b1s3" destination="CMA-EX-EYS" id="PUD-1B-bNW"/>
                         <outlet property="b2s2" destination="AWy-XE-mk6" id="ieK-Cz-ArW"/>
                         <outlet property="currentStudent" destination="XdF-kc-uRB" id="o8a-Gw-HMf"/>
+                        <outlet property="selectedStudent" destination="bcq-TA-USE" id="5sf-mv-BdE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXV-dh-rob" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-131" y="614"/>
+            <point key="canvasLocation" x="121" y="-129"/>
         </scene>
         <!--Listof Classes View Controller-->
         <scene sceneID="26k-dE-rAO">
@@ -732,7 +739,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Gry-fm-KJo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Gvu-nv-k2M">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXd-RE-2Tt">
@@ -769,9 +776,9 @@
         <image name="unclickedStar.png" width="773" height="773"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cZa-mz-GE4"/>
-        <segue reference="ggZ-Wp-dEL"/>
-        <segue reference="SDc-Zf-lFP"/>
+        <segue reference="ZL3-tz-0zk"/>
+        <segue reference="k8u-kA-mf7"/>
         <segue reference="bao-9I-Mue"/>
+        <segue reference="ggZ-Wp-dEL"/>
     </inferredMetricsTieBreakers>
 </document>

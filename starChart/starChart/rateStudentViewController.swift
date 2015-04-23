@@ -29,7 +29,10 @@ class rateStudentViewController: UIViewController {
     @IBOutlet weak var b3s2: UIImageView!
     
     @IBOutlet weak var b3s3: UIImageView!
+    
     @IBOutlet weak var currentStudent: UIButton!
+    
+    @IBOutlet weak var selectedStudent: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
