@@ -8,18 +8,34 @@
 
 import UIKit
 
-class studentprofileViewController: UIViewController {
+class studentprofileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
     @IBOutlet var listofStudents: UITableView!
+
     //when student selected go to rateStudentview controller and populate accordingly
+    var tableData = ["One","Two","Three"]
     
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //Return the number of rows in the section
+        return tableData.count
+    }
     
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)  -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("studentNameCell") as UITableViewCell
+        
+        cell.textLabel?.text = tableData[indexPath.row]
+        
+        return cell
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        println("HERE")
         
+        //listofStudents.datasource = self
+        //listofStudents.delegate = self
         
     }
     

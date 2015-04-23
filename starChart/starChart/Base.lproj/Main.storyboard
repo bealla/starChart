@@ -113,11 +113,23 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" red="0.47843137250000001" green="0.2274509804" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="studentNameCell" id="JTf-o0-noF">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JTf-o0-noF" id="F5W-Fg-wWb">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4ng-mr-JK8" id="gEd-d6-p8h"/>
+                            <outlet property="delegate" destination="4ng-mr-JK8" id="9C2-pT-Dvh"/>
+                        </connections>
                     </tableView>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="listofStudents" destination="b5l-aZ-vst" id="gSb-FR-ZAo"/>
+                        <outlet property="listofStudents" destination="b5l-aZ-vst" id="3gq-wc-crr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ziQ-yO-sgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
