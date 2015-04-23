@@ -9,7 +9,6 @@
 import UIKit
 
 class addClassViewController: UIViewController {
-    let tableData = ["One","Two","Three"]
     
     @IBOutlet weak var status: UILabel!
     @IBOutlet weak var classname: UITextField!
