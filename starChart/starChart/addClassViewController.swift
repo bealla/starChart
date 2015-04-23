@@ -40,7 +40,7 @@ class addClassViewController: UIViewController {
         }
         let starchartDB = FMDatabase(path: databasePath as String)
         if starchartDB.open() {
-            let sql_stmt = "CREATE TABLE IF NOT EXISTS COURSES (ID INTEGER PRIMARY KEY AUTOINCREMENT, CID INTEGER AUTO_INCREMENT, NAME TEXT, BEGIN DATE, END DATE)"
+            let sql_stmt = "CREATE TABLE IF NOT EXISTS COURSES (ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT UNIQUE, BEGIN DATE, END DATE)"
             if !starchartDB.executeStatements(sql_stmt) {
                 println("Error: \(starchartDB.lastErrorMessage())")
             }
@@ -68,7 +68,7 @@ class addClassViewController: UIViewController {
         
         if contactDB.open() {
             
-            let insertSQL = "INSERT INTO COURSES (name) VALUES ('\(classname.text)')"
+            let insertSQL = "INSERT OR IGNORE INTO COURSES (name) VALUES ('\(classname.text)')"
             
             let result = contactDB.executeUpdate(insertSQL,
                 withArgumentsInArray: nil)
@@ -79,6 +79,27 @@ class addClassViewController: UIViewController {
             } else {
                 status.text = "Class Added"
                 classname.text = ""
+            }
+        } else {
+            println("Error: \(contactDB.lastErrorMessage())")
+        }
+        
+        classesList()
+    }
+    
+    func classesList(){
+        //looks up all the students listed in the database
+        let contactDB = FMDatabase(path: databasePath as String)
+        
+        if contactDB.open() {
+            
+            let querySQL = "SELECT name FROM COURSES;"
+            
+            let results:FMResultSet? = contactDB.executeQuery(querySQL,
+                withArgumentsInArray: nil)
+            
+            while results?.next() == true {
+                println(results?.stringForColumn("name"))
             }
         } else {
             println("Error: \(contactDB.lastErrorMessage())")
