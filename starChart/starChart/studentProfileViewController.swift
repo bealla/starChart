@@ -64,7 +64,7 @@ class studentprofileViewController: UIViewController, UITableViewDataSource, UIT
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        println("HERE")
+        //println("HERE")
         
         let filemgr = NSFileManager.defaultManager()
         let dirPaths =
@@ -87,7 +87,7 @@ class studentprofileViewController: UIViewController, UITableViewDataSource, UIT
         //println ("adding table?")
         let starchartDB = FMDatabase(path: databasePath as String)
         if starchartDB.open() {
-            let sql_stmt = "CREATE TABLE IF NOT EXISTS STUDENT (ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT UNIQUE); CREATE TABLE IF NOT EXISTS STUDENTCLASS (ID INTEGER PRIMARY KEY AUTOINCREMENT, SID INTEGER, CID INTEGER, PERIOD INTEGER);"
+            let sql_stmt = "CREATE TABLE IF NOT EXISTS COURSES (ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT UNIQUE); CREATE TABLE IF NOT EXISTS STUDENT (ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT UNIQUE); CREATE TABLE IF NOT EXISTS STUDENTCLASS (ID INTEGER PRIMARY KEY AUTOINCREMENT, SID INTEGER, CID INTEGER, PERIOD INTEGER);"
             if !starchartDB.executeStatements(sql_stmt) {
                 println("Error: \(starchartDB.lastErrorMessage())")
             }

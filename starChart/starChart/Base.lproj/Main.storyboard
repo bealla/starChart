@@ -440,7 +440,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="WDr-lu-9hf" kind="popoverPresentation" popoverAnchorView="5rr-kN-kTH" id="mvL-hC-mQQ">
+                                    <segue destination="WDr-lu-9hf" kind="popoverPresentation" popoverAnchorView="5rr-kN-kTH" id="AZO-f7-a8d">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
                                 </connections>
@@ -486,6 +486,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="WDr-lu-9hf" id="LD4-jc-bZ9"/>
+                                    <outlet property="delegate" destination="WDr-lu-9hf" id="f1g-sm-pcM"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.47843137250000001" green="0.2274509804" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

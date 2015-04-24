@@ -16,6 +16,7 @@ class listofClassesViewController: UIViewController, UITableViewDataSource, UITa
     
     @IBOutlet weak var classList: UITableView!
     
+    //when student selected go to rateStudentview controller and populate accordingly
     var tableData = ["one", "two", "", "", "", "", "", "", "", ""]
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -35,7 +36,6 @@ class listofClassesViewController: UIViewController, UITableViewDataSource, UITa
         
         activeClass = tableData[indexPath.row]
         println(activeClass)
-        
     }
     
     func retrieveStudentClassList(){
@@ -63,9 +63,6 @@ class listofClassesViewController: UIViewController, UITableViewDataSource, UITa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-        //need to populate the table view with available classes from the database
         
         let filemgr = NSFileManager.defaultManager()
         let dirPaths =
@@ -97,7 +94,7 @@ class listofClassesViewController: UIViewController, UITableViewDataSource, UITa
             println("Error: \(starchartDB.lastErrorMessage())")
         }
         
-        retrieveStudentClassList()
+        //retrieveStudentClassList()
     }
     
     override func didReceiveMemoryWarning() {
