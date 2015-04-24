@@ -43,22 +43,23 @@ class listofClassesViewController: UIViewController, UITableViewDataSource, UITa
         let contactDB = FMDatabase(path: databasePath as String)
         
         var i = 0
-        
-        if contactDB.open() {
-            
-            let querySQL = "SELECT name FROM STUDENT;"
-            
-            let results:FMResultSet = contactDB.executeQuery(querySQL,
-                withArgumentsInArray: nil)
-            
-            while results.next() == true {
-                println(results.stringForColumn("name"))
-                tableData[i] = results.stringForColumn("name")
-                i += 1
+
+            if contactDB.open() {
+                
+                let querySQL = "SELECT name FROM COURSES WHERE COURSES.id = (SELECT cid FROM STUDENTCLASS WHERE sid = (SELECT STUDENT.id FROM STUDENT WHERE name = '\(activeStudent)'));"
+                
+                let results:FMResultSet = contactDB.executeQuery(querySQL,
+                    withArgumentsInArray: nil)
+                
+                while results.next() == true {
+                    println(results.stringForColumn("name"))
+                    tableData[i] = results.stringForColumn("name")
+                    i += 1
+                }
+            } else {
+                println("Error: \(contactDB.lastErrorMessage())")
             }
-        } else {
-            println("Error: \(contactDB.lastErrorMessage())")
-        }
+        println(tableData)
     }
     
     override func viewDidLoad() {
@@ -94,7 +95,7 @@ class listofClassesViewController: UIViewController, UITableViewDataSource, UITa
             println("Error: \(starchartDB.lastErrorMessage())")
         }
         
-        //retrieveStudentClassList()
+        retrieveStudentClassList()
     }
     
     override func didReceiveMemoryWarning() {
