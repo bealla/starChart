@@ -16,7 +16,6 @@
 		3E91A0F61AE452B100F98BD4 /* unclickedStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E91A0F51AE452B100F98BD4 /* unclickedStar.png */; };
 		3E91A0F81AE452B500F98BD4 /* starclicked.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E91A0F71AE452B500F98BD4 /* starclicked.png */; };
 		3E91A0FA1AE4817100F98BD4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E91A0F91AE4817100F98BD4 /* SecondViewController.swift */; };
-		3E91A0FC1AE4E6F500F98BD4 /* filledCoin.svg in Resources */ = {isa = PBXBuildFile; fileRef = 3E91A0FB1AE4E6F500F98BD4 /* filledCoin.svg */; };
 		3E91A0FE1AE56D9300F98BD4 /* hamButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E91A0FD1AE56D9300F98BD4 /* hamButtonViewController.swift */; };
 		3E91A1001AE5727000F98BD4 /* addStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E91A0FF1AE5727000F98BD4 /* addStudentViewController.swift */; };
 		3E91A1021AE572B700F98BD4 /* addClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E91A1011AE572B700F98BD4 /* addClassViewController.swift */; };
@@ -50,7 +49,6 @@
 		3E91A0F51AE452B100F98BD4 /* unclickedStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unclickedStar.png; path = ../../../../Desktop/unclickedStar.png; sourceTree = "<group>"; };
 		3E91A0F71AE452B500F98BD4 /* starclicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = starclicked.png; path = ../../../../Desktop/starclicked.png; sourceTree = "<group>"; };
 		3E91A0F91AE4817100F98BD4 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		3E91A0FB1AE4E6F500F98BD4 /* filledCoin.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = filledCoin.svg; path = ../../../../Desktop/filledCoin.svg; sourceTree = "<group>"; };
 		3E91A0FD1AE56D9300F98BD4 /* hamButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hamButtonViewController.swift; sourceTree = "<group>"; };
 		3E91A0FF1AE5727000F98BD4 /* addStudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addStudentViewController.swift; sourceTree = "<group>"; };
 		3E91A1011AE572B700F98BD4 /* addClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addClassViewController.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 				3E91A0CB1AE2355600F98BD4 /* Products */,
 				3E91A0F51AE452B100F98BD4 /* unclickedStar.png */,
 				3E91A0F71AE452B500F98BD4 /* starclicked.png */,
-				3E91A0FB1AE4E6F500F98BD4 /* filledCoin.svg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -228,7 +225,6 @@
 				3E91A0F81AE452B500F98BD4 /* starclicked.png in Resources */,
 				3E91A0F61AE452B100F98BD4 /* unclickedStar.png in Resources */,
 				3E91A0D51AE2355600F98BD4 /* Main.storyboard in Resources */,
-				3E91A0FC1AE4E6F500F98BD4 /* filledCoin.svg in Resources */,
 				3E91A0DA1AE2355600F98BD4 /* LaunchScreen.xib in Resources */,
 				3E91A0D71AE2355600F98BD4 /* Images.xcassets in Resources */,
 			);

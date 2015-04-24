@@ -31,6 +31,8 @@ class rateStudentViewController: UIViewController {
     @IBOutlet weak var b3s3: UIImageView!
     @IBOutlet weak var currentStudent: UIButton!
     
+    @IBAction func viewStudents(sender: AnyObject) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
