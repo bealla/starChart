@@ -247,7 +247,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XdF-kc-uRB">
-                                <rect key="frame" x="23" y="173" width="94" height="30"/>
+                                <rect key="frame" x="37" y="105" width="94" height="30"/>
                                 <state key="normal" title="ViewStudents">
                                     <color key="titleColor" red="0.52156862745098043" green="0.32941176470588235" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -423,8 +423,8 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAP-o7-Fj1">
-                                <rect key="frame" x="492" y="173" width="143" height="30"/>
-                                <state key="normal" title="Update Student">
+                                <rect key="frame" x="212" y="105" width="143" height="30"/>
+                                <state key="normal" title="Update Page">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -432,8 +432,19 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HTT-bb-IOF">
-                                <rect key="frame" x="11" y="79" width="1030" height="81"/>
+                                <rect key="frame" x="0.0" y="79" width="1030" height="81"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rr-kN-kTH">
+                                <rect key="frame" x="395" y="211" width="240" height="30"/>
+                                <state key="normal" title="Select Class">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WDr-lu-9hf" kind="popoverPresentation" popoverAnchorView="5rr-kN-kTH" id="mvL-hC-mQQ">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.47843137254901963" green="0.22745098039215686" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -443,6 +454,7 @@
                         <outlet property="b1s1" destination="2Rd-iU-VOw" id="lDO-H1-XMF"/>
                         <outlet property="b1s3" destination="CMA-EX-EYS" id="PUD-1B-bNW"/>
                         <outlet property="b2s2" destination="AWy-XE-mk6" id="ieK-Cz-ArW"/>
+                        <outlet property="currentCourses" destination="5rr-kN-kTH" id="0wW-4Q-EuU"/>
                         <outlet property="currentStudent" destination="XdF-kc-uRB" id="o8a-Gw-HMf"/>
                     </connections>
                 </viewController>
@@ -459,13 +471,21 @@
                         <viewControllerLayoutGuide type="bottom" id="n7L-3K-SCF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ymf-dl-zIs">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="vQi-12-ZoV">
                                 <rect key="frame" x="0.0" y="0.0" width="540" height="595"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexColor" red="0.21176470589999999" green="0.21960784310000001" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="classNameCell" id="86M-iQ-dZs">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="86M-iQ-dZs" id="892-Kp-R9B">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.47843137250000001" green="0.2274509804" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

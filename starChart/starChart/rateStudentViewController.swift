@@ -31,10 +31,13 @@ class rateStudentViewController: UIViewController {
     @IBOutlet weak var b3s3: UIImageView!
     
     @IBOutlet weak var currentStudent: UIButton!
+    @IBOutlet weak var currentCourses: UIButton!
     
     @IBAction func updateActiveStudentButton(sender: AnyObject) {
         
         updateActiveStudent()
+        updateActiveClassList()
+        
     }
 
     
@@ -48,6 +51,10 @@ class rateStudentViewController: UIViewController {
     
     func updateActiveStudent(){
         currentStudent.setTitle(activeStudent, forState: UIControlState.Normal)
+    }
+    
+    func updateActiveClassList(){
+        currentCourses.setTitle(activeClass, forState: UIControlState.Normal)
     }
     
     //set button "view/currentStudent" text to name selected from list of students talbe from datacase
