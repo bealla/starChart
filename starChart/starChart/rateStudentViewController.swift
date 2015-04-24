@@ -32,12 +32,22 @@ class rateStudentViewController: UIViewController {
     
     @IBOutlet weak var currentStudent: UIButton!
     
-    @IBOutlet weak var selectedStudent: UILabel!
+    @IBAction func updateActiveStudentButton(sender: AnyObject) {
+        
+        updateActiveStudent()
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        currentStudent.setTitle(activeStudent, forState: UIControlState.Normal)
+        
         // Do any additional setup after loading the view.
+    }
+    
+    func updateActiveStudent(){
+        currentStudent.setTitle(activeStudent, forState: UIControlState.Normal)
     }
     
     //set button "view/currentStudent" text to name selected from list of students talbe from datacase

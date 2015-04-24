@@ -8,7 +8,13 @@
 
 import UIKit
 
+var activeStudent = "TESTING"
+
+
 class studentprofileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    
+    
     
     var databasePath = NSString()
     @IBOutlet var listofStudents: UITableView!
@@ -30,9 +36,12 @@ class studentprofileViewController: UIViewController, UITableViewDataSource, UIT
     }
     
     func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-        let alert = UIAlertController(title: "Name selected", message: "You selected \(tableData[indexPath.row])", preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
+        //let alert = UIAlertController(title: "Name selected", message: "You selected \(tableData[indexPath.row])", preferredStyle: UIAlertControllerStyle.Alert)
+        //alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: nil))
+        //self.presentViewController(alert, animated: true, completion: nil)
+        
+        activeStudent = tableData[indexPath.row]
+        println(activeStudent)
     }
     
     func studentName(){
@@ -92,6 +101,7 @@ class studentprofileViewController: UIViewController, UITableViewDataSource, UIT
         } else {
             println("Error: \(starchartDB.lastErrorMessage())")
         }
+        
         studentName()
     }
     
